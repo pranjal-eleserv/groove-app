@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/groove-app/static/css/main.3bedef6b.css",
+    "main.js": "/groove-app/static/js/main.95dadce6.js",
+    "static/js/787.e0d85659.chunk.js": "/groove-app/static/js/787.e0d85659.chunk.js",
+    "index.html": "/groove-app/index.html",
+    "main.3bedef6b.css.map": "/groove-app/static/css/main.3bedef6b.css.map",
+    "main.95dadce6.js.map": "/groove-app/static/js/main.95dadce6.js.map",
+    "787.e0d85659.chunk.js.map": "/groove-app/static/js/787.e0d85659.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bedef6b.css",
+    "static/js/main.95dadce6.js"
+  ]
+}
