@@ -1,38 +1,45 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function About() {
-
-
-    const [myStyle, setMyStyle] = useState( {
-        color:'black',
-        backgroundColor:'white',
-
-    })
-
-    const [btnText, setbtnText] = useState( "Enable Dark mode")
+export default function About(props) {
 
 
+    // const [myStyle, setMyStyle] = useState( {
+    //     color:'black',
+    //     backgroundColor:'white',
 
-  const  toggleStyle =()=>{
+    // })
 
-        if(myStyle.color === 'white'){
-            setMyStyle({
-                color:'black',
-                backgroundColor:'white',
 
-            })
-            setbtnText("Enable dark mode")
-        }
-else{
-    setMyStyle({
-        color:'white',
-        backgroundColor:'black',
+    // const [btnText, setbtnText] = useState( "Enable Dark mode")
 
-    })
-    setbtnText("Enable light mode")
+let myStyle ={
+  color: props.mode ==='dark'? 'white':'#102818',
+  backgroundColor:  props.mode ==='dark'? '#102818':'white',
+  borderRadius: 10
 }
 
-    }
+
+
+//   const  toggleStyle =()=>{
+
+//         if(myStyle.color === 'white'){
+//             setMyStyle({
+//                 color:'black',
+//                 backgroundColor:'white',
+
+//             })
+//             setbtnText("Enable dark mode")
+//         }
+// else{
+//     setMyStyle({
+//         color:'white',
+//         backgroundColor:'black',
+
+//     })
+//     setbtnText("Enable light mode")
+// }
+
+//     }
    
   return (
     <div className="container py-4 mt-3" style={myStyle}>
@@ -131,9 +138,9 @@ else{
           </div>
         </div>
       </div>
-<div className="mt-4 text-center">
+{/* <div className="mt-4 text-center">
 <button type="button" onClick={toggleStyle} className="btn btn-secondary">{btnText}</button>
-</div>
+</div> */}
 
     </div>
   );

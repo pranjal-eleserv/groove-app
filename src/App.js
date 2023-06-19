@@ -52,7 +52,7 @@ function App() {
       <div className="container mt-2">
         <Routes>
          
-            <Route path='/about' element={<About />} />
+            <Route path='/about'  element={<About mode={mode} />} />
         
 
             <Route path='/' element={<TextForm
